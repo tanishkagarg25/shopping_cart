@@ -1,0 +1,58 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}About{% endblock %}
+{% block style %}
+.jumbotron{
+    background-color: #b1bfd8;
+background-image: linear-gradient(315deg, #b1bfd8 0%, #6782b4 74%);
+}
+#ab{
+    background-color: #fee2f8;
+background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+
+
+}
+img{
+    border-radius: 50%;
+    height:170px;
+    width:170px;
+}
+{% endblock %}
+{% block body %}
+
+<main role="main">
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1 class="display-3">Grocery Cart</h1>
+        <p>An online grocer is either a brick-and-mortar supermarket or grocery store that allows online
+             ordering, or a standalone e-commerce service that includes grocery items.There is usually a
+             delivery charge for this service. Brick-and-mortar supermarkets that have built internet 
+             channels to better service their clients are known as online grocers.[3] Online grocery delivery
+              services are available throughout Europe, Asia and North America, mostly in urban centers. 
+              The online ordering is done through e-commerce websites or mobile apps.</p>
+        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+      </div>
+    </div>
+  
+    <div class="container" id="ab">
+        <div class="row">
+        {% load static %}
+        <div class="col-md-4" >
+          <h2>Tanishka Garg</h2>
+          <p>Phone no: 9900168704<br>
+          Email: tanishkagarg25@gmail.com<br>   
+          Address: Bangalore,India </p>
+          <p><a class="btn btn-secondary" href="https://www.instagram.com" role="button">Connect Thru Instagram &raquo;</a></p>
+        </div>
+        <div class="col-md-4 my-4">
+            <img src="{% static 'shop/Tani.jpg' %}" class="float-left" alt="...">
+          </div>
+      </div>
+      <hr>
+    </div> <!-- /container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="/docs/4.2/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-zDnhMsjVZfS3hiP7oCBRmfjkQC4fzxVxFhBx8Hkz2aZX8gEvA/jsP3eXRCvzTofP" crossorigin="anonymous"></script></body>
+  </main>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends 'shop/basic.html' %}
+
+{% block title %}Contact{% endblock %}
+{% block body %}
+
+<div class="container my-4" style="background-color: #fee2f8;
+background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+">
+    <h2>Contact us regarding any query</h2>
+    <form action="/shop/contact/" method="post">{% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+          <label for="phone">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your Phone number">
+          <label for="query">Query</label>
+          <textarea class="form-control" id="query" name="desc" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+</div>
+
+{% endblock %}
